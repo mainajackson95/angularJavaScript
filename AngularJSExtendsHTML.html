@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS Extends HTML</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+
+    <div ng-app="">
+
+        <p>Input something in the input box:</p>
+
+        <p>Name: <input type="text" ng-model="name"></p>
+        <p ng-bind="name"></p>
+    </div>
+
+    <!---------------------
+        starts automatically when the web page has loaded.
+        ng-app directive tells AngularJS that the <div> element is the "owner" of an AngularJS application.
+        ng-model directive binds the value of the input field to the application variable name.
+        ng-bind directive binds the content of the <p> element to the application variable name.
+    ----------------->
+</body>
+</html>
